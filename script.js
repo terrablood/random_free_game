@@ -1,9 +1,9 @@
 async function vicc_lekerdezes(){
     let promise = await fetch('https://www.freetogame.com/api/games')
     let cucc = await promise.json();
-    return cucc;
+    return cucc; // ez az infóhalmaz
 }
-async function vicc_frissitese(e){
+async function vicc_frissitese(e){ // az infóhalmazból random id el ki kell választani egyet, amit szétbontunk és kiírunk
     let vicc = await vicc_lekerdezes();
     felvezetes.innerHTML = vicc.setup;
     poen.innerHTML = vicc.delivery
