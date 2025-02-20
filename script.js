@@ -1,5 +1,5 @@
 async function vicc_lekerdezes(){
-    let promise = await fetch('https://www.freetogame.com/api')
+    let promise = await fetch('https://www.freetogame.com/api/games')
     let cucc = await promise.json();
     return cucc;
 }
@@ -12,6 +12,8 @@ async function vicc_frissitese(e){
 function main(){
     kerek.addEventlistener('click', vicc_frissitese);
 }
+
+// ranom id selector kell!!!!!!!!!
 /*
 
 /games: Retrieve a list of all free-to-play games.
